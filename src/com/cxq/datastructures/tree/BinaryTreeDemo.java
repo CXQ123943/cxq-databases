@@ -15,11 +15,13 @@ public class BinaryTreeDemo {
         HeroNode node2 = new HeroNode(2,"2");
         HeroNode node3 = new HeroNode(3,"3");
         HeroNode node4 = new HeroNode(4,"4");
+        HeroNode node5 = new HeroNode(5,"5");
         BinaryTree binaryTree = new BinaryTree(root);
 
         //手动创建一个二叉树
         root.setLeft(node2);
         root.setRight(node3);
+        node3.setLeft(node5);
         node3.setRight(node4);
 
         //binaryTree.preOrder();
